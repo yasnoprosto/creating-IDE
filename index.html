@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="themes/prism.css" rel="stylesheet" />
+    <!-- Подключаем библиотеку Google Code Prettify -->
+    <title>InfTech</title>
+    <script defer src="main.js"></script>
+    <script src="themes/prism.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <span class="header__element" id="create_folder">Создать папку</span>
+        <span class="header__element" id="delete_folder">Удалить папку</span>
+        <span class="header__element" id="create_file">Загрузить файл</span>
+        <span class="header__element">Скачать файл</span>
+        <span class="header__element" id="delete_file">Удалить файл</span>
+        <span class="header__element" id="rename_folder">Переименовать папку</span>
+        <span class="header__element" id="rename_file">Переименовать файл</span>
+    </header>
+    <div class="main_section__container">
+        <nav class="store__navigation" id="nav">
+            <div class="nav__item nav__folder">Проект 1</div>
+            <div class="nav__item nav__folder">bin</div>
+            <div class="nav__item nav__folder">Debug</div>
+            <div  class="nav__item nav__folder">Resources</div>
+            <div  title="Общий файл" class="nav__item nav__file">App.xaml</div>
+            <div  title="Код главного окна"  class="nav__item nav__file">MainWindow.xaml</div>
+            <div  title="Стилизация главного окна" class="nav__item nav__file">MainWindow.cs</div>
+            <div  title="Пакет зависимостей" class="nav__item nav__file">package.json</div>
+        </nav>
+        <hr>
+        <main class="content__container">
+            <div class="content__header">
+            </div>
+            <div class="content__main"></div>
+            <pre>
+
+            <code id="code"></code>
+            </pre>
+        </main>
+    </div>
+</div>
+</body>
+</html>
